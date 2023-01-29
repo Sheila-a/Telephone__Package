@@ -1,13 +1,10 @@
-import phoneNumbers from "./phoneNumbers";
-import Observer from "../js/observer";
+import phoneNumbers from "./phoneNumbers.js";
+import Observer from "../js/observer.js";
 
 class printNumber extends phoneNumbers {
   printMessage() {
     return this.phoneNumbers[0];
   }
-}
-
-class printNumber extends Observer {
   update(state) {
     this.render(state);
   }

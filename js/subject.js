@@ -1,8 +1,13 @@
 // subject class
 class sheilaTelephone {
   constructor() {
-    // list of observers
-    this.observers = [];
+    // List of observers with singleton pattern
+    if (sheilaTelephone.instance) {
+      return sheilaTelephone.instance;
+    } else {
+      this.observers = [];
+      sheilaTelephone.instance = this;
+    }
   }
 
   addObserver(observer) {
