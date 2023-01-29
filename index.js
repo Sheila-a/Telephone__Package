@@ -22,5 +22,3 @@ TelephoneState.addObserver(dialedNum);
 // To perform initial render on load
 printedNum.render(TelephoneState.get());
 dialedNum.render(TelephoneState.get());
-
-console.log(UserPhoneNumbers);
