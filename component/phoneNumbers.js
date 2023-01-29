@@ -1,6 +1,6 @@
 class phoneNumbers {
   constructor() {
-    this.phoneNumbers = [080334];
+    this.phoneNumbers = [];
   }
 
   addPhoneNumber(phoneNumber) {
